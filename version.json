@@ -1,4 +1,6 @@
 {
-  "version": "1.1.0",
-  "notes": "UI bilkul simple ho gayi: ek Start button se Button Finder aur Mouse V13 dono chalte hain. Backend start wala masla fix. Hold ke 2 mode: time dunga, ya button gayab hone tak."
+  "version": "1.2.0",
+  "changelog": "Basic app, backend fix, naya update system - ab Check Update se naya version Drive se download hoke khud lag jata hai.",
+  "driveId": "1JVsmrff3oHQSBQ5y1r9V0iaOkh6COwlE",
+  "size": 248204382
 }
