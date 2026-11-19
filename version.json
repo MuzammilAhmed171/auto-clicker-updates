@@ -1,6 +1,6 @@
 {
-  "version": "1.4.0",
-  "changelog": "English UI. Fully tested end to end before release: backend starts on its own (Python is bundled inside the app), every button was really clicked and verified - Start, Pause, Resume, Stop, update check and settings save all pass. Update check now also works behind a system proxy.",
-  "driveId": "1WUZFt97bqS1GEAtrMLciRLy1GXbuOpNL",
-  "size": 327130396
+  "version": "1.5.0",
+  "changelog": "Real mouse control you can see: the app now really moves your mouse to the button, with a green pulse ring on the cursor while it clicks or holds. Take control back any time just by moving the mouse - the app lets go at once and resumes by itself once the mouse is free for 3 seconds. New test screen included so you can try everything safely. Speed fixes: the old 22 second double check is gone (now a fast recheck on the button area only), the hold watch checks only the button area, mouse moves are smooth and fast, move away is instant, and the first scan after any action starts at once with no waiting. The floating top bar now has live controls: scan interval with a countdown to the next scan, and hold time - changes apply immediately without stopping, and they save to your settings.",
+  "driveId": "1l9OmPdCcSmcpqzZEuX1HUWdJm83Jurpw",
+  "size": 327414401
 }
