@@ -1,6 +1,74 @@
 {
-  "version": "1.5.0",
-  "changelog": "Real mouse control you can see: the app now really moves your mouse to the button, with a green pulse ring on the cursor while it clicks or holds. Take control back any time just by moving the mouse - the app lets go at once and resumes by itself once the mouse is free for 3 seconds. New test screen included so you can try everything safely. Speed fixes: the old 22 second double check is gone (now a fast recheck on the button area only), the hold watch checks only the button area, mouse moves are smooth and fast, move away is instant, and the first scan after any action starts at once with no waiting. The floating top bar now has live controls: scan interval with a countdown to the next scan, and hold time - changes apply immediately without stopping, and they save to your settings.",
-  "driveId": "1l9OmPdCcSmcpqzZEuX1HUWdJm83Jurpw",
-  "size": 327414401
+  "version": "1.6.0",
+  "changelog": "Updates now come from GitHub. This version switches the in-app updater to download update packages directly from GitHub (split into parts, verified with SHA-256). Google Drive was only a one-time bridge to deliver this 1.6.0 update to older versions - after 1.6.0, Drive plays no role in updates.",
+  "size": 327502971,
+  "sha256": "806f737c4ce04b99c2d3b129df93b8f8ed7037c89093bf066a2d9582e0c2408b",
+  "driveId": "1ALbDuoNtzL0CgR2yGoW9KnK2lqHXJuYg",
+  "githubParts": [
+    {
+      "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.6.0/AutoClickerPro-v1.6.0-portable-win64.zip.part01",
+      "size": 26214400,
+      "sha256": "2af31635cf92869a8e26e7229d3af895bd4bcc9bdd292708a6bb59e0f2ea0c97"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.6.0/AutoClickerPro-v1.6.0-portable-win64.zip.part02",
+      "size": 26214400,
+      "sha256": "590d70866133e2702967abba3fc140c82fa3382d11ca0930b5277b513106b17a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.6.0/AutoClickerPro-v1.6.0-portable-win64.zip.part03",
+      "size": 26214400,
+      "sha256": "303e2bd67f59b37c53c7ff0b81e3980c7bfcf73067bd26c80145d5bec093717a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.6.0/AutoClickerPro-v1.6.0-portable-win64.zip.part04",
+      "size": 26214400,
+      "sha256": "37f19a586792d05fb26731b701abf7da2507bf65bd2bb5428647286d839ead2f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.6.0/AutoClickerPro-v1.6.0-portable-win64.zip.part05",
+      "size": 26214400,
+      "sha256": "62b030fffb01bdaae23341875fa89ff5a64c4ec4f1b4f93b5fd905f06ef5871e"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.6.0/AutoClickerPro-v1.6.0-portable-win64.zip.part06",
+      "size": 26214400,
+      "sha256": "65adca658a95a5155f4062450f102106d6ae4d950f1d908195c74696d9d1d658"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.6.0/AutoClickerPro-v1.6.0-portable-win64.zip.part07",
+      "size": 26214400,
+      "sha256": "2168ce8440bf52292c169bf35b11b956f95db604a0998ba3bc7ca7c750744436"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.6.0/AutoClickerPro-v1.6.0-portable-win64.zip.part08",
+      "size": 26214400,
+      "sha256": "bb2c3b3549f8a708663cc107c26d73c55658a54513a5fb8b98ad1155b22ef768"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.6.0/AutoClickerPro-v1.6.0-portable-win64.zip.part09",
+      "size": 26214400,
+      "sha256": "44ec0669cf29d60d2df21c382aea5b99bc0b2117dc251a0a5b7e4fe63ce0ada7"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.6.0/AutoClickerPro-v1.6.0-portable-win64.zip.part10",
+      "size": 26214400,
+      "sha256": "6be1100ee24a953ff32abd318dccd917e8f7f19b752200a3987928890117c3da"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.6.0/AutoClickerPro-v1.6.0-portable-win64.zip.part11",
+      "size": 26214400,
+      "sha256": "6d928e8e83d257858bd6a662f5631090e65a88c6d7486555712d560eae37182d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.6.0/AutoClickerPro-v1.6.0-portable-win64.zip.part12",
+      "size": 26214400,
+      "sha256": "5a47d540fd2f17fba82b077c178fa34b66bff0d2e200f6a8e724c9f0c133ac53"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.6.0/AutoClickerPro-v1.6.0-portable-win64.zip.part13",
+      "size": 12930171,
+      "sha256": "7ed1b5c38b2260eb1bdab1e1a5267fe50d43a9673fcdcf09ff37a8240d0ded84"
+    }
+  ]
 }
