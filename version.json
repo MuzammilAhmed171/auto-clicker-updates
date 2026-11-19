@@ -1,6 +1,6 @@
 {
-  "version": "1.3.0",
-  "changelog": "Python ab app ke andar hai - kuch install nahi karna, backend foran start hota hai. Start par screen par lal border, upar bar aur app me bara banner - saaf pata lagega ke chal raha hai. Pause par border peeli. Mouse V13 ab baghair torch ke bilkul waisa hi chalta hai.",
-  "driveId": "1BamuKPF3vnqIbQgXFugy1_vu7Wh6zhuP",
-  "size": 327935218
+  "version": "1.4.0",
+  "changelog": "English UI. Fully tested end to end before release: backend starts on its own (Python is bundled inside the app), every button was really clicked and verified - Start, Pause, Resume, Stop, update check and settings save all pass. Update check now also works behind a system proxy.",
+  "driveId": "1WUZFt97bqS1GEAtrMLciRLy1GXbuOpNL",
+  "size": 327130396
 }
