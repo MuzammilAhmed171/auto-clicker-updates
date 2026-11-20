@@ -1,73 +1,73 @@
 {
- "version": "1.7.5",
- "changelog": "Five fixes from your Windows tests of v1.7.3 and v1.7.4: (1) Scanning now restarts properly - after Stop, Pause, a backend crash or even killing the app in Task Manager, pressing Start cleans up the old state, restarts the backend itself and scans again (before, a dead backend left every Start stuck on an error and nothing ever scanned). (2) Stop now fully stops the backend - the whole backend process tree is killed and confirmed gone, so nothing keeps running in the background after Stop or after closing the app (before, Stop only paused the finder and the Python backend kept running forever). (3) The green ring now stays on the cursor - it is positioned with setBounds from the live cursor point every tick and never reads its own position back, which was the rounding feedback that made it creep away to a corner on Windows. (4) CPU load fixed - scans now run one at a time with a gap between full detects, stale queued scans are dropped instead of piling up, and the detection engine is capped to 2 threads, so the app no longer pushes the PC to 100 percent CPU or hangs it (idle CPU measured 0 percent). (5) In app updates are now silent - no terminal windows open during an update, the backend runs windowless and is confirmed stopped before the update is applied, and the update helper logs to a file instead of flashing consoles that reopened when closed.",
- "size": 327508033,
- "sha256": "fc4d1f77b870125a2eb1331756c039b745da2e91a06b7d58cf13156178c4d093",
+ "version": "1.7.6",
+ "changelog": "Two fixes from your Windows test of v1.7.5: (1) The backend no longer takes the app down when it stops after a long run - if the backend process dies while the finder is running, the app now restarts it on its own (one clear log line, a short pause, then scanning continues by itself) instead of repeating 'Backend is not running' every second until you press Fix Backend. The backend is also hardened so a single bad scan can never kill it, and if it ever crashes hard it now leaves a report in engine/backend_crash.log. (2) New counter next to the scan count: 'Buttons done' - how many buttons the app has fully finished (hold completed and removed, or clicked) in this run. It shows in the main window and in the top bar, and the log prints 'Buttons done: N' after every finished button.",
+ "size": 327487640,
+ "sha256": "b5130d6960601fa7b35236b7ace4734799d2baca718a951789bc3d5ea896ed45",
  "githubParts": [
   {
-   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.5/AutoClickerPro-v1.7.5-portable-win64.zip.part01",
+   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.6/AutoClickerPro-v1.7.6-portable-win64.zip.part01",
    "size": 26214400,
-   "sha256": "6e7399e558541608bed6d9cf9c00ae914b4371cd9ccdb05c188d4d92ca410e75"
+   "sha256": "1833aa93a16311a415592f5f948a8de5cb8921b78a73d0b3ce8a184c3b98c710"
   },
   {
-   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.5/AutoClickerPro-v1.7.5-portable-win64.zip.part02",
+   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.6/AutoClickerPro-v1.7.6-portable-win64.zip.part02",
    "size": 26214400,
-   "sha256": "04e9849a7e172f478ba9fbeb960ca64e3d244b73915d8ea6a809a5ce5eaa6667"
+   "sha256": "933583c188044c51e234065be8af2f4beb2939de1db5f18d952aac3b18475b6e"
   },
   {
-   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.5/AutoClickerPro-v1.7.5-portable-win64.zip.part03",
+   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.6/AutoClickerPro-v1.7.6-portable-win64.zip.part03",
    "size": 26214400,
-   "sha256": "4edb0f95f2685e07b1fafb31874449ae9e4b03f277bf05672b199689598f8357"
+   "sha256": "6a74e94e6b8af7ed77d4d3bd5352c239e847ab177afbfe3243d0688dea8afe15"
   },
   {
-   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.5/AutoClickerPro-v1.7.5-portable-win64.zip.part04",
+   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.6/AutoClickerPro-v1.7.6-portable-win64.zip.part04",
    "size": 26214400,
-   "sha256": "745475abb1d9823c69a8a14a3ae1d0c47e5edca683a89d5aaa2209e13ef0e7f5"
+   "sha256": "b01e0af781503423b75e2a47ee8dbcd79d8d87ded1080c0f199ba7badadf4e64"
   },
   {
-   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.5/AutoClickerPro-v1.7.5-portable-win64.zip.part05",
+   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.6/AutoClickerPro-v1.7.6-portable-win64.zip.part05",
    "size": 26214400,
-   "sha256": "1307b79a9eef0acfbaf6a8bfa06d067715ec8cae84cb8e4607cbb31be7220302"
+   "sha256": "17fe9b1b45f65c84153a2067c7b58836c5ebdf6f55883743234d59b4e2a730e4"
   },
   {
-   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.5/AutoClickerPro-v1.7.5-portable-win64.zip.part06",
+   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.6/AutoClickerPro-v1.7.6-portable-win64.zip.part06",
    "size": 26214400,
-   "sha256": "bf54c46fefa4852364d9389ee70e2fbe51afda419ba67de4bd9a75a8a52e3b1f"
+   "sha256": "fa81805d53260d811f07622047f2d7a21cfc953f941e2a3be8e0620913862471"
   },
   {
-   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.5/AutoClickerPro-v1.7.5-portable-win64.zip.part07",
+   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.6/AutoClickerPro-v1.7.6-portable-win64.zip.part07",
    "size": 26214400,
-   "sha256": "9684f93a931297caeef937452d0203d730e423bd8d7f21c223b1f866b5c2a01f"
+   "sha256": "689aea1d88465c1e6dde50b701c0e6f603e95c3d0de50794792f34729604027a"
   },
   {
-   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.5/AutoClickerPro-v1.7.5-portable-win64.zip.part08",
+   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.6/AutoClickerPro-v1.7.6-portable-win64.zip.part08",
    "size": 26214400,
-   "sha256": "9f800fd5d7ce3bcfb47faed36a339b0135e251ee1daabdacdfd439c6d14b6f90"
+   "sha256": "65e50820d8d3b9eae68caf76f9331f396097ba37eb5afe12d7842935c6c6a87e"
   },
   {
-   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.5/AutoClickerPro-v1.7.5-portable-win64.zip.part09",
+   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.6/AutoClickerPro-v1.7.6-portable-win64.zip.part09",
    "size": 26214400,
-   "sha256": "d3e9243d9271757cf12c793607f035d9f24f4eb5f388a138a151f198bb8de998"
+   "sha256": "a17ba7be6e73ecda4110483fc114c2423c0af5c789db451286e2ca0febe7eb96"
   },
   {
-   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.5/AutoClickerPro-v1.7.5-portable-win64.zip.part10",
+   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.6/AutoClickerPro-v1.7.6-portable-win64.zip.part10",
    "size": 26214400,
-   "sha256": "40342d3fab5a1abee37082f504333d4a38f9af564682286173c24df49c9fdbe2"
+   "sha256": "690106e0a791438018ba43d86d61a62d45ecc6b1c987a290ed1483953e067972"
   },
   {
-   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.5/AutoClickerPro-v1.7.5-portable-win64.zip.part11",
+   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.6/AutoClickerPro-v1.7.6-portable-win64.zip.part11",
    "size": 26214400,
-   "sha256": "f3cee74bdc56ab516f510c0ef0b49efd4a99366656f87b7c0eb6429e3a2bf341"
+   "sha256": "97c4b5707a6a500c294acc68be0680b899eaa34130c75442781f08467467b1e1"
   },
   {
-   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.5/AutoClickerPro-v1.7.5-portable-win64.zip.part12",
+   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.6/AutoClickerPro-v1.7.6-portable-win64.zip.part12",
    "size": 26214400,
-   "sha256": "48bc09f768917cf3001ad992230bb1ac4735ece7aacd0a535eba60770cc1c484"
+   "sha256": "b57c35018479fa6790198362c502baa6e0997b8fe2783cdf78d6862b7141d90d"
   },
   {
-   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.5/AutoClickerPro-v1.7.5-portable-win64.zip.part13",
-   "size": 12935233,
-   "sha256": "7086cf0b89f394966ca4d900ea1d6b2d82c03fc414af3805080bd01c9a43b744"
+   "url": "https://raw.githubusercontent.com/MuzammilAhmed171/auto-clicker-updates/main/releases/v1.7.6/AutoClickerPro-v1.7.6-portable-win64.zip.part13",
+   "size": 12914840,
+   "sha256": "23d9f8c01f5b2e33dde093e2678c2674fd384a09342558a0b25efa0b451801a4"
   }
  ]
 }
